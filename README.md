@@ -13,7 +13,7 @@
 ---
 
 ## Objective
-Set up a clean Node.js backend project, explore package management with `npm`, and build a web server first using the built-in `http` module and subsequently using the `Express` web framework.
+I made a small server with Node.js first, then rebuilt it with Express. It has routes for a welcome message, my details, the current time, and unknown paths.
 
 ---
 
@@ -107,7 +107,7 @@ When running `npm init -y`, Node generates a `package.json` manifest. Here is wh
 
 ---
 
-## Viva Preparation Questions & Answers
+## Viva notes
 
 ### Q1: What is the difference between `package.json` and `node_modules`?
 * **`package.json`**: A lightweight metadata manifest file (typically only a few kilobytes). It records the project configuration, script aliases, and names/versions of required dependencies. It is committed to Git.
@@ -122,7 +122,7 @@ When running `npm init -y`, Node generates a `package.json` manifest. Here is wh
 
 ---
 
-## Notes: Problems Faced and Solutions
+## Problems I faced
 
 1. **Port 3000 Dual-Stack / Address Conflict (`EADDRINUSE`)**:
    * *Problem:* When attempting to start the server on port 3000, Node threw `listen EADDRINUSE: address already in use :::3000` because a previous background Vite development process was still running on port 3000.
