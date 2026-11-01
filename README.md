@@ -2,7 +2,6 @@
 
 **Pinisetti Sai Babu** • **252U1R1192** • **Section: S-019**  
 **Course:** Backend Development Fundamentals (Year II Term II) • Aurora  
-**Faculty:** Joel Prashanth D  
 
 ---
 
