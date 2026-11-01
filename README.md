@@ -40,14 +40,12 @@ PORT=3000
 * **Start Primary Express Server:**
   ```bash
   npm start
-  # or directly: node server.js
   ```
   Server runs at: `http://localhost:3000`
 
 * **Start Vanilla Node.js HTTP Server (Task 3 Demonstration):**
   ```bash
   npm run start:vanilla
-  # or directly: node vanilla-server.js
   ```
   Server runs at: `http://localhost:3000`
 
@@ -104,21 +102,6 @@ When running `npm init -y`, Node generates a `package.json` manifest. Here is wh
 
 ### 4. Route: Unknown Path (404 Not Found Handler)
 ![Route 404 Not Found](screenshots/Screenshot%202026-10-31%20143834.png)
-
----
-
-## Viva notes
-
-### Q1: What is the difference between `package.json` and `node_modules`?
-* **`package.json`**: A lightweight metadata manifest file (typically only a few kilobytes). It records the project configuration, script aliases, and names/versions of required dependencies. It is committed to Git.
-* **`node_modules`**: The directory that stores the actual installed code and compiled binary files for all packages and their transitive dependencies. It is often very large (hundreds of megabytes) and should **never** be committed to Git (always ignored via `.gitignore`). `npm install` reconstructs `node_modules` from `package.json` at any time.
-
-### Q2: What does `app.listen()` do?
-* `app.listen(PORT, [callback])` binds the Express application to a specific network port (e.g., 3000) on the host machine and starts an underlying HTTP server that listens for incoming TCP network requests. The callback function executes as soon as the server has successfully started listening.
-
-### Q3: What do `request` (`req`) and `response` (`res`) represent?
-* **`req` (`http.IncomingMessage`)**: Represents the incoming HTTP request from the client (browser/Postman). It contains information sent by the client, such as URL path (`req.url`), HTTP method (`req.method`), headers (`req.headers`), query parameters (`req.query`), and body data (`req.body`).
-* **`res` (`http.ServerResponse`)**: Represents the outgoing HTTP response being prepared by the server. It provides helper methods to send data back to the client, such as `res.status()`, `res.send()`, and `res.json()`.
 
 ---
 
